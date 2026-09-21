@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-print-pdf",
   "version": "4.0.2",
-  "description": "Cordova Print PDF Plugin",
+  "description": "Cordova Print PDF Plugin (cordova-android 14/15, cordova-ios 7/8)",
   "cordova": {
     "id": "cordova-plugin-print-pdf",
     "platforms": [
@@ -11,8 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sarahgoldman/cordova-print-pdf-plugin"
+    "url": "https://github.com/tgptom/cordova-print-pdf-plugin"
   },
+  "bugs": {
+    "url": "https://github.com/tgptom/cordova-print-pdf-plugin/issues"
+  },
+  "homepage": "https://github.com/tgptom/cordova-print-pdf-plugin",
   "keywords": [
     "cordova",
     "print",
