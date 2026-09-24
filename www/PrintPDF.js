@@ -38,10 +38,10 @@ PrintPDF.prototype.print = function (options) {
 
     if (!data) {
         if (errorCallback) {
-            errorCallback({
+            errorCallback(JSON.stringify({
                 success: false,
                 error: "Parameter 'data' is required."
-            });
+            }));
         }
         return false;
     }
