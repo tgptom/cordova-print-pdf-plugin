@@ -16,6 +16,7 @@ import android.util.Base64;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaResourceApi;
+import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -51,7 +52,7 @@ public class PrintPDF extends CordovaPlugin {
             printViaNative(content, type, title, callback);
             return true;
         } else if (ACTION_IS_PRINT_AVAILABLE.equals(action)) {
-            callback.success(isPrintServiceAvailable());
+            callback.sendPluginResult(new PluginResult(PluginResult.Status.OK, isPrintServiceAvailable()));
             return true;
         }
 
